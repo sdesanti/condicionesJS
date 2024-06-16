@@ -1,0 +1,70 @@
+h1{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+h4 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  p{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+  button{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+ }
+
+ label{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+ }
+
+
+
+#opciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    border: 3px;
+    height: 50vh;
+    padding: 10px;
+}
+
+#boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.ingresa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
