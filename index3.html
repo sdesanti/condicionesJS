@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style3.css">
+    <title>3 - Verificación de password</title>
+</head>
+<body>
+    <div class="ingresa">
+        <h1>Ingresa el Password</h1>
+    </div>
+
+    <div id="opciones">
+        <label for="select1"></label>
+        <select id="select1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+
+        <label for="select2"></label>
+        <select id="select2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+
+        <label for="select3"></label>
+        <select id="select3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+
+    <button onclick="verificarPassword()" id="boton">Ingresar</button>
+
+
+    <p id="resultado"></p>
+    </div>
+    <div>
+        <button><a href="./index2.html">Desafío n°2</a></button>
+    </div>
+    <script>
+        function verificarPassword() {
+            const digito1 = document.getElementById('select1').value;
+            const digito2 = document.getElementById('select2').value;
+            const digito3 = document.getElementById('select3').value;
+            const password = digito1 + digito2 + digito3;
+
+            let mensaje;
+            if (password === '911') {
+                mensaje = 'password 1 correcto';
+            } else if (password === '714') {
+                mensaje = 'password 2 correcto';
+            } else {
+                mensaje = 'password incorrecto';
+            }
+
+            document.getElementById('resultado').innerText = mensaje;
+        }
+    </script>
+</body>
+</html>

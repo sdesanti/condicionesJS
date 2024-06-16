@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style1.css">
+    <title>1 - imagen</title>
+</head>
+<body>
+    <div class="desafio"><h1>Desafío condiciones JS</h1>
+    </div>
+    <div class="dn1"><p>N°1</p></div>
+    <div class="foto">
+    <img id="imagen" src="https://placedog.net/500" alt="perro" width="300" onclick="
+if (document.querySelector('#imagen').style.border === '4px solid red') {
+    document.querySelector('#imagen').style.border = '';
+} else {
+    document.querySelector('#imagen').style.border = '4px solid red';
+}
+"/>
+<h4>Presiona la imagen con doble click</h4>
+    </div>
+    <div>
+        <button><a href="./index2.html">Desafío n°2</a></button>
+    </div>
+
+    <script src="assets/style.js"> </script>
+</body>
+</html>
